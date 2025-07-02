@@ -1,0 +1,17 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const currStatus = {
+  location: "chicago",
+  music: "真っ白 - 藤井風",
+};
+---
+
+<PageLayout title="about">
+    <h1>about</h1>
+    <div>
+        <h4>current status</h4>
+        <p>⚲ {currStatus.location}</p>
+        <p>♫ {currStatus.music}</p>
+    </div>
+</PageLayout>

@@ -1,0 +1,30 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+const pageTitle = "sandbox";
+
+const currStatus = {
+  location: "chicago",
+  music: "真っ白 - 藤井風",
+  likes: ["coffee shops", "card games"],
+};
+
+const happy = true;
+
+---
+<PageLayout title={pageTitle}>
+    <h1>{pageTitle}</h1>
+
+    <div>
+        <h4>code sandbox</h4>
+        {happy && <p>this text is happi :-)</p>}
+        {happy ? <p>this text is happi :-)</p> : <p>this text is sad :-(</p>}
+    </div>
+
+    <div>
+        <h4>current status</h4>
+        <p>⚲ {currStatus.location}</p>
+        <p>♫ {currStatus.music}</p>
+        <p>♡ {currStatus.likes.join(', ')}</p>
+        <!-- <p>♡ {currStatus.likes.map((like) => <li>{like}</li>)}</p> -->
+    </div>
+</PageLayout>
