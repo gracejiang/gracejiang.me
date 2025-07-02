@@ -1,8 +1,80 @@
----
+;---
 import PageLayout from '../../layouts/PageLayout.astro';
+import NavBar from '../../components/NavBar.astro';
+import Spacer from '../../components/Spacer.astro';
+
+import '../../styles/2024.css';
+
+import { Image } from 'astro:assets';
+import happi_svg from "../../assets/2024/happi.svg"
+import slep_svg from "../../assets/2024/slep.svg"
 ---
 
-<PageLayout title="2024">
-    <h1>2024</h1>
+<PageLayout title="2024" includeNavBar={false}>
+
+    <slot slot="head">
+    <style>
+      :root {
+        --page-width: 120ch;
+      }
+    </style>
+    </slot>
+
+  <div id="page-2024">
+
+    <div class="outer-div">
+        <div class="centered-div">
+            <NavBar/>
+            <Spacer verticalSpace={60}/>
+        </div>
+    </div>
+    
+
+    <div class="page-section">
+        <div class="page-section-left"></div>
+        <div class="page-section-mid">
+            <h1>my 2024 in numbers</h1>
+            <Spacer verticalSpace={20}/>
+            <p>from fostering my first cat, witnessing K and R get married, visiting China for the first time in 12 years (上次也是龍年🐉!), and another year exploring Chicago’s many charms, my 2024 was a year packed with ups and downs. along the way, i collected a couple of data points to help commemorate this year :)</p>
+            <Spacer verticalSpace={40}/>
+            <p>
+            <em>table of contents</em>
+            <ul>
+                <li>happiness</li>
+                <li>sleep</li>
+                <li>music</li>
+            </ul>
+            </p>
+            </div>
+        <div class="page-section-right"></div>
+    </div>
+
+
+    <div class="page-section">
+        <div class="page-section-left"><Image src={happi_svg} alt="happi icon" /></div>
+        <div class="page-section-mid">
+
+            <h2>how did i like 2024? a happiness chart</h2>
+            <div></div>
+
+        </div>
+
+        <div class="page-section-right"></div>
+    </div>
+
+    <div class="page-section">
+        <div class="page-section-left"><Image src={slep_svg} alt="slep icon" /></div>
+        <div class="page-section-mid">
+
+            <h2>sleep zzZ</h2>
+            <div></div>
+
+        </div>
+        <div class="page-section-right"></div>
+    </div>
+
+
+
+  </div>
 </PageLayout>
 
