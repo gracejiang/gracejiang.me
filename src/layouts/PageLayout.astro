@@ -2,7 +2,10 @@
 // PageLayout.astro
 
 import '../styles/global.css';
+import '../styles/pageLayout.css';
+
 import NavBar from '../components/NavBar.astro';
+import Spacer from '../components/Spacer.astro';
 
 const { title } = Astro.props;
 const { includeNavBar = true } = Astro.props;
@@ -18,7 +21,7 @@ const { includeNavBar = true } = Astro.props;
   </head>
 
   <body>
-    {includeNavBar ? <NavBar/> : null}
+    {includeNavBar ? <NavBar/><Spacer verticalSpace={60}/> : null}
     <slot />
   </body>
 </html>

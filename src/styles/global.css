@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root {
+  --primary-dark: #1F191B;
+}
+
+
+
 html {
-  background-color: #f1f5f9;
-  font-family: monospace, sans-serif;
+  background-color: #F8F8F8;
+  font-family: "Inconsolata", sans-serif;
+  color: var(--primary-dark);
 }
 
 * {
@@ -13,11 +22,16 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+  padding: 24px;
+  padding-top: 5rem;
 }
 
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #3089b3;
 }

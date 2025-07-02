@@ -1,6 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-const pageTitle = "sandbox";
+const title = "sandbox";
 
 const currStatus = {
   location: "chicago",
@@ -11,8 +11,8 @@ const currStatus = {
 const happy = true;
 
 ---
-<PageLayout title={pageTitle}>
-    <h1>{pageTitle}</h1>
+<PageLayout title={title}>
+    <h1 class="pageTitle">{title}</h1>
 
     <div>
         <h4>code sandbox</h4>
