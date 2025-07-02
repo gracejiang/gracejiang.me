@@ -1,4 +1,4 @@
-<img src="public/favicon.svg.svg" alt="site favicon" style="width:240px;">
+<img src="public/favicon.svg" alt="site favicon" style="width:240px;">
 
 # grac-v2025
 
