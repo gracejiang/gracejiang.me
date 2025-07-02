@@ -15,7 +15,7 @@ import slep_svg from "../../assets/2024/slep.svg"
     <slot slot="head">
     <style>
       :root {
-        --page-width: 120ch;
+        --page-width: 116ch;
       }
     </style>
     </slot>
@@ -31,8 +31,9 @@ import slep_svg from "../../assets/2024/slep.svg"
     
 
     <div class="page-section">
-        <div class="page-section-left"></div>
-        <div class="page-section-mid">
+
+    <div class="outer-div">
+        <div class="centered-div">
             <h1>my 2024 in numbers</h1>
             <Spacer verticalSpace={20}/>
             <p>from fostering my first cat, witnessing K and R get married, visiting China for the first time in 12 years (上次也是龍年🐉!), and another year exploring Chicago’s many charms, my 2024 was a year packed with ups and downs. along the way, i collected a couple of data points to help commemorate this year :)</p>
@@ -46,12 +47,15 @@ import slep_svg from "../../assets/2024/slep.svg"
             </ul>
             </p>
             </div>
-        <div class="page-section-right"></div>
+        </div>
     </div>
 
 
     <div class="page-section">
-        <div class="page-section-left"><Image src={happi_svg} alt="happi icon" /></div>
+        <div class="page-section-left">
+            <Image src={happi_svg} alt="happi icon" />
+            <Spacer verticalSpace={12}/>
+        </div>
         <div class="page-section-mid">
 
             <h2>how did i like 2024? a happiness chart</h2>
@@ -59,18 +63,19 @@ import slep_svg from "../../assets/2024/slep.svg"
 
         </div>
 
-        <div class="page-section-right"></div>
     </div>
 
     <div class="page-section">
-        <div class="page-section-left"><Image src={slep_svg} alt="slep icon" /></div>
+        <div class="page-section-left">
+            <Image src={slep_svg} alt="slep icon" />
+            <Spacer verticalSpace={12}/>
+        </div>
         <div class="page-section-mid">
 
             <h2>sleep zzZ</h2>
             <div></div>
 
         </div>
-        <div class="page-section-right"></div>
     </div>
 
 

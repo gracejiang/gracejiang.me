@@ -7,24 +7,26 @@
 }
 
 #page-2024 .page-section {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    vertical-align: top;
 }
 
+/* for floating left images */
+
 #page-2024 .page-section-left {
-    width: 19ch;
+    width: 17ch;
     display: inline-block;
+    vertical-align: top;
 }
 
 #page-2024 .page-section-mid {
     max-width: 80ch;
     display: inline-block;
+    vertical-align: top;
 }
 
-#page-2024 .page-section-right {
-    width: 19ch;
-    display: inline-block;
-}
 
+/* for centered div matching rest of site */
 #page-2024 .outer-div {
     display: flex;
     justify-content: center;
@@ -35,3 +37,19 @@
     width: calc(var(--global-page-width) - 6ch);
 }
 
+
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+  #page-2024 .page-section-left {
+    display: block;
+  }
+  #page-2024 .page-section-mid {
+    display: block;
+  }
+
+  #page-2024 .page-section {
+    margin-bottom: 80px;
+  }
+}
