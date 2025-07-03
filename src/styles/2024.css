@@ -37,6 +37,11 @@
     width: calc(var(--global-page-width) - 6ch);
 }
 
+#page-2024 .div-50 {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
 
 
 /* MOBILE VIEW */

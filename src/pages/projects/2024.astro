@@ -8,6 +8,7 @@ import '../../styles/2024.css';
 import { Image } from 'astro:assets';
 import happi_svg from "../../assets/2024/happi.svg"
 import slep_svg from "../../assets/2024/slep.svg"
+import music_svg from "../../assets/2024/music.svg"
 ---
 
 <PageLayout title="2024" includeNavBar={false}>
@@ -67,13 +68,64 @@ import slep_svg from "../../assets/2024/slep.svg"
 
     <div class="page-section">
         <div class="page-section-left">
-            <Image src={slep_svg} alt="slep icon" />
+            <Image src={slep_svg} alt="slep icon" style="width: 70%;" />
             <Spacer verticalSpace={12}/>
         </div>
         <div class="page-section-mid">
 
             <h2>sleep zzZ</h2>
             <div></div>
+
+        </div>
+    </div>
+
+    
+    <div class="page-section">
+        <div class="page-section-left">
+            <Image src={music_svg} alt="music icon" style="width: 66%;" />
+            <Spacer verticalSpace={12}/>
+        </div>
+        <div class="page-section-mid">
+
+            <h2>tunes</h2>
+            <!-- <p>tbh 2024 was a year of kbrainrot music👍 (shit still slaps)</p> -->
+
+            <div class="div-50">
+                <p>17,342</p>
+                <p><em>tracks listened to</em></p>
+            </div>
+            <div class="div-50">
+                <p>62,630</p>
+                <p><em>mins (according to spotify)</em></p>
+            </div>
+
+            <div class="div-50">
+                <p><strong>top artists</strong></p>
+                <p>
+                    1. NewJeans<br/>
+                    2. Rex Orange County<br/>
+                    3. grentperez<br/>
+                    4. Kiss of Life<br/>
+                    5. ILLIT<br/>
+                    6. BTS<br/>
+                    7. Twice<br/>
+                    8. RM
+                </p>
+            </div>
+
+            <div class="div-50">
+                <p><strong>top tracks</strong></p>
+                <p>
+                    1. When The Day Is Done - grentperez<br/>
+                    2. the cutest pair - Regina Song<br/>
+                    3. Right Now - NewJeans<br/>
+                    4. Need to Know - Jay Park<br/>
+                    5. Magnetic - ILLIT<br/>
+                    6. Always - Rex Orange County<br/>
+                    7. OMG - NewJeans<br/>
+                    8. Bubble Gum - NewJeans
+                </p>
+            </div>
 
         </div>
     </div>
