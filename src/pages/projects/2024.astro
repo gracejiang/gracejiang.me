@@ -54,7 +54,7 @@ import music_svg from "../../assets/2024/music.svg"
 
     <div class="page-section">
         <div class="page-section-left">
-            <Image src={happi_svg} alt="happi icon" />
+            <Image src={happi_svg} alt="happi icon" style="width: 90px;" />
             <Spacer verticalSpace={12}/>
         </div>
         <div class="page-section-mid">
@@ -68,7 +68,7 @@ import music_svg from "../../assets/2024/music.svg"
 
     <div class="page-section">
         <div class="page-section-left">
-            <Image src={slep_svg} alt="slep icon" style="width: 70%;" />
+            <Image src={slep_svg} alt="slep icon" style="width: 90px;" />
             <Spacer verticalSpace={12}/>
         </div>
         <div class="page-section-mid">
@@ -82,22 +82,23 @@ import music_svg from "../../assets/2024/music.svg"
     
     <div class="page-section">
         <div class="page-section-left">
-            <Image src={music_svg} alt="music icon" style="width: 66%;" />
+            <Image src={music_svg} alt="music icon" style="width: 90px;" />
             <Spacer verticalSpace={12}/>
         </div>
         <div class="page-section-mid">
 
             <h2>tunes</h2>
-            <!-- <p>tbh 2024 was a year of kbrainrot music👍 (shit still slaps)</p> -->
+            <Spacer verticalSpace={20}/>
+            <div class="div-50">
+                <p id="tunes-highlight">17,342</p>
+                <p><em>total tracks listened to</em></p>
+            </div>
+            <div class="div-50">
+                <p id="tunes-highlight">62,630</p>
+                <p><em>mins listened (spotify)</em></p>
+            </div>
 
-            <div class="div-50">
-                <p>17,342</p>
-                <p><em>tracks listened to</em></p>
-            </div>
-            <div class="div-50">
-                <p>62,630</p>
-                <p><em>mins (according to spotify)</em></p>
-            </div>
+            <Spacer verticalSpace={50}/>
 
             <div class="div-50">
                 <p><strong>top artists</strong></p>
@@ -111,6 +112,7 @@ import music_svg from "../../assets/2024/music.svg"
                     7. Twice<br/>
                     8. RM
                 </p>
+                <br/>
             </div>
 
             <div class="div-50">

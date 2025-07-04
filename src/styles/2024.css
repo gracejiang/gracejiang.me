@@ -20,7 +20,7 @@
 }
 
 #page-2024 .page-section-mid {
-    max-width: 80ch;
+    width: 80ch;
     display: inline-block;
     vertical-align: top;
 }
@@ -39,8 +39,15 @@
 
 #page-2024 .div-50 {
     display: inline-block;
-    width: 48%;
+    width: 49%;
     vertical-align: top;
+}
+
+#page-2024 #tunes-highlight {
+    color: #1A3DBD;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
 }
 
 
@@ -52,9 +59,15 @@
   }
   #page-2024 .page-section-mid {
     display: block;
+    width: 100%;
   }
 
   #page-2024 .page-section {
     margin-bottom: 80px;
+  }
+
+  #page-2024 .div-50 {
+    display: block;
+    width: 100%;
   }
 }
