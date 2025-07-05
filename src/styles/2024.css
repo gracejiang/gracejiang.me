@@ -11,6 +11,11 @@
     vertical-align: top;
 }
 
+#page-2024 h4 {
+    font-weight: 700;
+    font-size: 1.12rem;
+}
+
 /* for floating left images */
 
 #page-2024 .page-section-left {
@@ -43,12 +48,72 @@
     vertical-align: top;
 }
 
-#page-2024 #tunes-highlight {
+#page-2024 .div-33 {
+    display: inline-block;
+    width: 32.5%;
+    vertical-align: top;
+}
+
+#page-2024 .div-45 {
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+}
+
+#page-2024 .div-10 {
+    display: inline-block;
+    width: 9.5%;
+    vertical-align: top;
+}
+
+/* HAPPINESS */
+#page-2024 #happiness-workday {
+    color: #B06760;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+}
+
+#page-2024 #happiness-nonworkday {
+    color: #73B345;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+}
+
+/* SLEEP */
+#page-2024 #slep-left {
+    text-align: right;
+}
+
+#page-2024 #slep-mid {
+    text-align: center;
+}
+
+#page-2024 .slep-highlight {
+    color: #53746C;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+}
+
+#page-2024 .slep-workday {
+    color: #B06760;
+}
+
+#page-2024 .slep-nonworkday {
+    color: #73B345;
+}
+
+/* TUNES */
+
+#page-2024 .tunes-highlight {
     color: #1A3DBD;
     font-size: 4rem;
     font-weight: 1000;
     letter-spacing: -0.1rem;
 }
+
 
 /* MOBILE VIEW */
 
@@ -65,33 +130,31 @@
     margin-bottom: 80px;
   }
 
-  #page-2024 .div-50 {
+    #page-2024 .div-50, #page-2024 .div-33, #page-2024 .div-45, #page-2024 .div-10 {
     display: block;
     width: 100%;
-  }
+    }
 
   #page-2024 .happiness-stat {
-        margin-bottom: 50px;
-    }
+    margin-bottom: 50px;
+  }
+
+  #page-2024 #slep-left, #page-2024 #slep-mid {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  #page-2024 #happiness-workday, #page-2024 #happiness-nonworkday,
+  #page-2024 .tunes-highlight, #page-2024 .slep-highlight {
+    font-size: 3rem;
+    letter-spacing: -0.05rem;
+  }
+
 }
 
 
 
 /* happiness table */
-
-#page-2024 #happiness-workday {
-    color: #B06760;
-    font-size: 4rem;
-    font-weight: 1000;
-    letter-spacing: -0.1rem;
-}
-
-#page-2024 #happiness-nonworkday {
-    color: #73B345;
-    font-size: 4rem;
-    font-weight: 1000;
-    letter-spacing: -0.1rem;
-}
 
 .horizontal-scroll-container { 
     overflow-x: auto;
