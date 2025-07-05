@@ -50,7 +50,6 @@
     letter-spacing: -0.1rem;
 }
 
-
 /* MOBILE VIEW */
 
 @media (max-width: 768px) {
@@ -70,6 +69,10 @@
     display: block;
     width: 100%;
   }
+
+  #page-2024 .happiness-stat {
+        margin-bottom: 50px;
+    }
 }
 
 
