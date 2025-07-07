@@ -44,7 +44,7 @@
 
 #page-2024 .div-50 {
     display: inline-block;
-    width: 49%;
+    width: 48.5%;
     vertical-align: top;
 }
 
@@ -56,7 +56,7 @@
 
 #page-2024 .div-45 {
     display: inline-block;
-    width: 44%;
+    width: 43%;
     vertical-align: top;
 }
 
@@ -129,19 +129,21 @@
   #page-2024 .page-section {
     margin-bottom: 80px;
   }
-
-    #page-2024 .div-50, #page-2024 .div-33, #page-2024 .div-45, #page-2024 .div-10 {
+  
+  #page-2024 .div-33 {
     display: block;
     width: 100%;
-    }
+  }
+
+  /* page-2024 .div-50, #page-2024 .div-45, #page-2024 .div-10 */
+
+  /* #page-2024 #slep-left, #page-2024 #slep-mid {
+    text-align: left;
+    margin-bottom: 20px;
+  } */
 
   #page-2024 .happiness-stat {
     margin-bottom: 50px;
-  }
-
-  #page-2024 #slep-left, #page-2024 #slep-mid {
-    text-align: left;
-    margin-bottom: 20px;
   }
 
   #page-2024 #happiness-workday, #page-2024 #happiness-nonworkday,
