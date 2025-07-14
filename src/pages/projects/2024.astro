@@ -1,4 +1,4 @@
-;---
+---
 import PageLayout from '../../layouts/PageLayout.astro';
 import NavBar from '../../components/NavBar.astro';
 import Spacer from '../../components/Spacer.astro';
@@ -9,6 +9,10 @@ import { Image } from 'astro:assets';
 import happi_svg from "../../assets/2024/happi.svg"
 import slep_svg from "../../assets/2024/slep.svg"
 import music_svg from "../../assets/2024/music.svg"
+
+import S_w_graph from '../../components/2024/S_w_graph.astro';
+import S_num_hrs from '../../components/2024/S_num_hrs.astro';
+
 ---
 
 <PageLayout title="2024" includeNavBar={false}>
@@ -525,7 +529,7 @@ import music_svg from "../../assets/2024/music.svg"
 
             <Spacer verticalSpace={50}/>
             <div>
-                <p>hmm.. there appears to be a noticeable difference between weekdays and weekends. this difference becomes more prominent when distinguishing between workdays and non-workdays (weekends + holidays + pto days):</p>
+                <p>there appeared to be a noticeable difference between weekdays and weekends. this difference became more prominent when distinguishing between workdays and non-workdays (weekends + holidays + pto days):</p>
                 <Spacer verticalSpace={50}/>
                 <div class="div-50 happiness-stat">
                     <p><span id="happiness-workday">2.81</span> /5</p>
@@ -547,7 +551,7 @@ import music_svg from "../../assets/2024/music.svg"
         </div>
         <div class="page-section-mid">
             <h2>sleep zzZ</h2>
-            <Spacer verticalSpace={50}/>
+            <Spacer verticalSpace={40}/>
 
             <div>
                 <h4>overall sleep habits</h4>
@@ -566,9 +570,20 @@ import music_svg from "../../assets/2024/music.svg"
                 </div>
 
                 <Spacer verticalSpace={40}/>
+
+                <div>
+
+                    <S_num_hrs />
+                    <Spacer verticalSpace={20}/>
+                    <S_w_graph />
+                    
+
+                </div>
+
+                <Spacer verticalSpace={40}/>
             
                 <div>
-                    <p>like my happiness, there was a noticeable difference between workdays and non-workdays (weekends + holidays + pto):</p>
+                    <p>looking at the sleeping/waking hour spikes on weekends compared to weekdays:</p>
                     <Spacer verticalSpace={40}/>
                     <div class="div-45" id="slep-left">
                         <h4>workdays</h4>
