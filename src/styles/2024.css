@@ -159,6 +159,12 @@
 }
 
 
+#page-2024 #finances-subtext {
+  font-size: 0.8rem;
+  line-height: 140%;
+  font-style: italic;
+}
+
 /* sleep tables */
 /* by day slep habits */
 #378f6f57-a6b4-4deb-b45b-e72ababa35db {
@@ -177,7 +183,7 @@
 .horizontal-scroll-container { 
     overflow-x: auto;
 }
-
+/* 
 #T_26eef {
     text-align: center;
     border-collapse: collapse;
@@ -234,4 +240,4 @@
 #T_26eef_row4_col20, #T_26eef_row6_col19 {
   background-color: #008000;
   color: #f1f1f1;
-}
+} */
