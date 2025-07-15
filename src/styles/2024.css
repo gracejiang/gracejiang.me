@@ -56,13 +56,13 @@
 
 #page-2024 .div-45 {
     display: inline-block;
-    width: 43%;
+    width: 42.5%;
     vertical-align: top;
 }
 
 #page-2024 .div-10 {
     display: inline-block;
-    width: 9.5%;
+    width: 9%;
     vertical-align: top;
 }
 
@@ -99,10 +99,14 @@
 
 #page-2024 .slep-workday {
     color: #B06760;
+    font-size: 2.8rem;
+    letter-spacing: 0rem;
 }
 
 #page-2024 .slep-nonworkday {
+    font-size: 2.8rem;
     color: #73B345;
+    letter-spacing: 0rem;
 }
 
 /* TUNES */
@@ -156,11 +160,12 @@
 
 
 /* sleep tables */
-#6b4c7cdf-67ba-48af-a3ea-637ef8adcccc {
+/* by day slep habits */
+#378f6f57-a6b4-4deb-b45b-e72ababa35db {
   width: 640px;
   height: 340px;
 }
-
+/* overall slep habits */
 #66d32697-d5e3-4408-a943-301eb3d99bcc {
   height: 300px;
   width: 640px;

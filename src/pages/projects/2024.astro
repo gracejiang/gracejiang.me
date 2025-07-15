@@ -529,7 +529,7 @@ import S_num_hrs from '../../components/2024/S_num_hrs.astro';
 
             <Spacer verticalSpace={50}/>
             <div>
-                <p>there appeared to be a noticeable difference between weekdays and weekends. this difference became more prominent when distinguishing between workdays and non-workdays (weekends + holidays + pto days):</p>
+                <p>my workdays and non-workdays (weekends + holidays + pto days) seemed to be noticeably different:</p>
                 <Spacer verticalSpace={50}/>
                 <div class="div-50 happiness-stat">
                     <p><span id="happiness-workday">2.81</span> /5</p>
@@ -551,40 +551,39 @@ import S_num_hrs from '../../components/2024/S_num_hrs.astro';
         </div>
         <div class="page-section-mid">
             <h2>sleep zzZ</h2>
-            <Spacer verticalSpace={40}/>
+            <Spacer verticalSpace={30}/>
 
             <div>
                 <h4>overall sleep habits</h4>
-                <Spacer verticalSpace={12}/>
-                <div class="div-33">
-                    <p class="slep-highlight">7.62</p>
-                    <p><em>avg hrs slept/night</em></p>
-                </div>
-                <div class="div-33">
-                    <p class="slep-highlight">8:16a</p>
-                    <p><em>avg waking time</em></p>
-                </div>
-                <div class="div-33">
-                    <p class="slep-highlight">12:39a</p>
-                    <p><em>avg sleeping time</em></p>
-                </div>
-
-                <Spacer verticalSpace={40}/>
-
                 <div>
-
-                    <S_num_hrs />
-                    <Spacer verticalSpace={20}/>
-                    <S_w_graph />
-                    
-
+                    <div class="div-33">
+                        <p class="slep-highlight">7.62</p>
+                        <p><em>avg hrs slept/night</em></p>
+                    </div>
+                    <div class="div-33">
+                        <p class="slep-highlight">8:16a</p>
+                        <p><em>avg waking time</em></p>
+                    </div>
+                    <div class="div-33">
+                        <p class="slep-highlight">12:39a</p>
+                        <p><em>avg sleeping time</em></p>
+                    </div>
                 </div>
-
+                <Spacer verticalSpace={30}/>
+                <S_num_hrs />
                 <Spacer verticalSpace={40}/>
+            </div>
+
             
+            <div>
+                <h4>workdays vs non-workdays</h4>
+                <Spacer verticalSpace={30}/>
+
+
+                <S_w_graph />
+                <Spacer verticalSpace={30}/>
+
                 <div>
-                    <p>looking at the sleeping/waking hour spikes on weekends compared to weekdays:</p>
-                    <Spacer verticalSpace={40}/>
                     <div class="div-45" id="slep-left">
                         <h4>workdays</h4>
 
