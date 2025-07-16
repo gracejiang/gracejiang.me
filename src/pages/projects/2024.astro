@@ -17,6 +17,9 @@ import H_distribution from '../../components/2024/H_distribution.astro';
 import S_w_graph from '../../components/2024/S_w_graph.astro';
 import S_num_hrs from '../../components/2024/S_num_hrs.astro';
 import F_overall from '../../components/2024/F_overall.astro';
+import F_spending_over_time from '../../components/2024/F_spending_over_time.astro';
+import F_by_category from '../../components/2024/F_by_category.astro';
+import F_2023_vs_2024 from '../../components/2024/F_2023_vs_2024.astro';
 
 ---
 
@@ -220,36 +223,36 @@ import F_overall from '../../components/2024/F_overall.astro';
 
             <div>
                 <h4>spending this year</h4>
-                <Spacer verticalSpace={20}/>
-                <p>scaled to an arbitrary amount for privacy:</p>
-                <Spacer verticalSpace={12}/>
-                <div class='horizontal-scroll-container'>
-                    <F_overall />
-                </div>
-                <Spacer verticalSpace={20}/>
+                <Spacer verticalSpace={30}/>
                 <div id="finances-subtext">
-                    <p>
-                        <strong>essentials</strong>: rent, utilities. 
-                        <strong>living</strong>: household supplies. 
+                    <p>*adjusted by an arbitrary scalar for privacy reasons. 
+                        <strong>essentials</strong>: rent, utilities, household supplies. 
                         <strong>food</strong>: food. 
                         <strong>self</strong>: health (doctors, dentists), classes. 
                         <strong>non-essentials</strong>: clothes, games, tech, anything for fun. 
                         <strong>social</strong>: social related, eg: concert tix. 
                         <strong>transportation</strong>: public transit, rideshare. 
                         <strong>travel</strong>: flights, hotels. 
-                        <strong>gifts/donations</strong>: gifts, donations
+                        <strong>gifts/donations</strong>: gifts, donations. 
+                        <strong>misc</strong>: uncategorized.
                     </p>
                 </div>
-                
+
+                <Spacer verticalSpace={20}/>
+                <F_by_category />
+                <Spacer verticalSpace={20}/>
+                <F_spending_over_time />
+                <Spacer verticalSpace={20}/>
+                <div class='horizontal-scroll-container'><F_overall /></div>
             </div>
-            <Spacer verticalSpace={40}/>
+
+            <Spacer verticalSpace={60}/>
             <div>
                 <h4>2023 vs 2024</h4>
-
-                
+                <Spacer verticalSpace={20}/>
+                <F_2023_vs_2024 />
             </div>
         </div>
-        <Spacer verticalSpace={80}/>
     </div>
 
     
