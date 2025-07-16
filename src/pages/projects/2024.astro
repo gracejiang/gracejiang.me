@@ -12,6 +12,8 @@ import bellz_svg from "../../assets/2024/bellz.svg"
 import music_svg from "../../assets/2024/music.svg"
 
 import H_overall from '../../components/2024/H_overall.astro';
+import H_weekday from '../../components/2024/H_weekday.astro';
+import H_distribution from '../../components/2024/H_distribution.astro';
 import S_w_graph from '../../components/2024/S_w_graph.astro';
 import S_num_hrs from '../../components/2024/S_num_hrs.astro';
 import F_overall from '../../components/2024/F_overall.astro';
@@ -79,18 +81,42 @@ import F_overall from '../../components/2024/F_overall.astro';
             </div>
 
             <Spacer verticalSpace={50}/>
-            <p>my workdays and non-workdays (weekends + holidays + pto days) were noticeably different:</p>
-            <Spacer verticalSpace={50}/>
+
             <div>
-                <div class="div-50 happiness-stat">
+                <div class="div-33 center-align">
+                   <p><span id="happiness-avg">3.07</span> /5</p>
+                    <p><em>avg happiness</em></p>
+                    <br/><br/>
+                </div>
+                <div class="div-33 center-align">
                     <p><span id="happiness-workday">2.81</span> /5</p>
                     <p><em>avg workday happiness</em></p>
+                    <br/><br/>
                 </div>
-                <div class="div-50 happiness-stat">
+                <div class="div-33 center-align">
                     <p><span id="happiness-nonworkday">3.48</span> /5</p>
                     <p><em>avg non-workday happiness</em></p>
+                    <br/><br/>
                 </div>
             </div>
+
+            <Spacer verticalSpace={20}/>
+
+            <p>my happiness looked mostly normally distributed, centered around <strong>3.07</strong> (σ=0.67), and dipped lower in the middle of the week compared to weekends.</p>
+            <Spacer verticalSpace={30}/>
+
+
+            <div class="div-47 mobile-collapse" >
+                <H_distribution />
+            </div>
+            <div class="div-3" />
+            <div class="div-47 mobile-collapse" >
+                <H_weekday />
+            </div>
+
+            
+
+
         </div>
 
     </div>
@@ -107,15 +133,15 @@ import F_overall from '../../components/2024/F_overall.astro';
             <div>
                 <h4>overall sleep habits</h4>
                 <div>
-                    <div class="div-33">
+                    <div class="div-33 mobile-collapse">
                         <p class="slep-highlight">7.62</p>
                         <p><em>avg hrs slept/night</em></p>
                     </div>
-                    <div class="div-33">
+                    <div class="div-33 mobile-collapse">
                         <p class="slep-highlight">8:16a</p>
                         <p><em>avg waking time</em></p>
                     </div>
-                    <div class="div-33">
+                    <div class="div-33 mobile-collapse">
                         <p class="slep-highlight">12:39a</p>
                         <p><em>avg sleeping time</em></p>
                     </div>

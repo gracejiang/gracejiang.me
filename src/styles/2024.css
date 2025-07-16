@@ -1,5 +1,7 @@
 #page-2024 {
     letter-spacing: 2%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #page-2024 p, ul {
@@ -44,7 +46,7 @@
 
 #page-2024 .div-50 {
     display: inline-block;
-    width: 48.5%;
+    width: 48%;
     vertical-align: top;
 }
 
@@ -60,25 +62,47 @@
     vertical-align: top;
 }
 
+#page-2024 .div-47 {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+}
+
 #page-2024 .div-10 {
     display: inline-block;
     width: 9%;
     vertical-align: top;
 }
 
+#page-2024 .div-3 {
+    display: inline-block;
+    width: 3%;
+    vertical-align: top;
+}
+
+#page-2024 .center-align {
+  text-align: center;
+  vertical-align: top;
+}
+
 /* HAPPINESS */
-#page-2024 #happiness-workday {
-    color: #B06760;
+
+#page-2024 #happiness-avg, #page-2024 #happiness-nonworkday, #page-2024 #happiness-workday {
     font-size: 4rem;
     font-weight: 1000;
     letter-spacing: -0.1rem;
 }
 
+#page-2024 #happiness-workday {
+    color: #B06760;
+}
+
 #page-2024 #happiness-nonworkday {
-    color: #73B345;
-    font-size: 4rem;
-    font-weight: 1000;
-    letter-spacing: -0.1rem;
+    color:#5b8c50;
+}
+
+#page-2024 #happiness-avg {
+    color: #A8BC84;
 }
 
 /* SLEEP */
@@ -105,7 +129,7 @@
 
 #page-2024 .slep-nonworkday {
     font-size: 2.8rem;
-    color: #73B345;
+    color: #5b8c50;
     letter-spacing: 0rem;
 }
 
@@ -133,24 +157,18 @@
   #page-2024 .page-section {
     margin-bottom: 80px;
   }
-  
-  #page-2024 .div-33 {
+
+  #page-2024 .mobile-collapse {
     display: block;
     width: 100%;
   }
-
-  /* page-2024 .div-50, #page-2024 .div-45, #page-2024 .div-10 */
-
-  /* #page-2024 #slep-left, #page-2024 #slep-mid {
-    text-align: left;
-    margin-bottom: 20px;
-  } */
 
   #page-2024 .happiness-stat {
     margin-bottom: 50px;
   }
 
   #page-2024 #happiness-workday, #page-2024 #happiness-nonworkday,
+  #page-2024 #happiness-avg,
   #page-2024 .tunes-highlight, #page-2024 .slep-highlight {
     font-size: 3rem;
     letter-spacing: -0.05rem;
