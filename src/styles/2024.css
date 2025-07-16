@@ -183,6 +183,17 @@
   font-style: italic;
 }
 
+
+#page-2024 #spending-plus {
+  font-weight: 700;
+  color: #99382f;
+}
+
+#page-2024 #spending-minus {
+  font-weight: 700;
+  color: #36992f;
+}
+
 /* sleep tables */
 /* by day slep habits */
 #378f6f57-a6b4-4deb-b45b-e72ababa35db {
