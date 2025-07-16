@@ -20,6 +20,7 @@ import F_overall from '../../components/2024/F_overall.astro';
 import F_spending_over_time from '../../components/2024/F_spending_over_time.astro';
 import F_by_category from '../../components/2024/F_by_category.astro';
 import F_2023_vs_2024 from '../../components/2024/F_2023_vs_2024.astro';
+import FF_spotify from '../../components/2024/FF_spotify.astro';
 
 ---
 
@@ -151,16 +152,19 @@ import F_2023_vs_2024 from '../../components/2024/F_2023_vs_2024.astro';
                 </div>
                 <Spacer verticalSpace={30}/>
                 <S_num_hrs />
+                <Spacer verticalSpace={25}/>
+                <S_w_graph />
                 <Spacer verticalSpace={40}/>
+
             </div>
 
             
             <div>
                 <h4>workdays vs non-workdays</h4>
-                <Spacer verticalSpace={30}/>
-
-                <S_w_graph />
-                <Spacer verticalSpace={30}/>
+                <Spacer verticalSpace={20}/>
+                <p>to no surprise, i slept later & longer on weekends compared to workdays. 
+                <em>(side tidbit: the midpoint of my free-day sleep times was 6:04am, putting me in <a href="https://www.cnbc.com/2018/04/30/daniel-pink-how-to-time-your-day-for-peak-performance.html" target="_blank" rel="noopener noreferrer">d.pink's night owl category</a>)</em></p>
+                <Spacer verticalSpace={20}/>
 
                 <div>
                     <div class="div-45" id="slep-left">
@@ -287,33 +291,38 @@ import F_2023_vs_2024 from '../../components/2024/F_2023_vs_2024.astro';
                 </div>
 
                 <Spacer verticalSpace={50}/>
-
-                <div class="div-50">
-                    <p><strong>top artists</strong></p>
+                <div class="div-47 mobile-collapse">
+                    <FF_spotify />
+                </div>
+                <div class="div-3" />
+                <div class="div-47 mobile-collapse">
+                    <p><strong>most listened to artists</strong></p>
                     <p>
                         1. NewJeans<br/>
                         2. Rex Orange County<br/>
                         3. grentperez<br/>
                         4. Kiss of Life<br/>
+                        <!--
                         5. ILLIT<br/>
                         6. BTS<br/>
                         7. Twice<br/>
                         8. RM
+                        -->
                     </p>
                     <br/>
-                </div>
-
-                <div class="div-50">
-                    <p><strong>top tracks</strong></p>
+                    <p><strong>most listened to tracks</strong></p>
                     <p>
                         1. When The Day Is Done - grentperez<br/>
                         2. the cutest pair - Regina Song<br/>
                         3. Right Now - NewJeans<br/>
                         4. Need to Know - Jay Park<br/>
+                        
+                        <!--
                         5. Magnetic - ILLIT<br/>
                         6. Always - Rex Orange County<br/>
                         7. OMG - NewJeans<br/>
                         8. Bubble Gum - NewJeans
+                        -->
                     </p>
                 </div>
             </div>
