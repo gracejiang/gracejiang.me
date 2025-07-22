@@ -11,12 +11,3 @@ p {
     font-size: 0.9rem;
     font-weight: 400;
 }
-
-#page-index a {
-    color: #47aab5;
-}
-
-#page-index a:hover {
-    color: #47aab5;
-    background-color: #b0e5eb;
-}
