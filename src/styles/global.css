@@ -142,4 +142,8 @@ ul {
     display: block;
     width: 100%;
   }
+
+  .mobile-hide {
+    display: none;
+  }
 }

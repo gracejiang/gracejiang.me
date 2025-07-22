@@ -1,26 +1,37 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
 import Spacer from '../components/Spacer.astro';
+import CopyEmail from '../components/index/CopyEmail.astro';
 
 import '../styles/index.css';
 ---
 
 <PageLayout title="grac" includeNavBar={false}>
+<div id="page-index">
+	<div class="mobile-hide">
+		<Spacer verticalSpace={40}/>
+	</div>
 	<div>
 		<h1 class="pageTitle">about</h1>
 		<div class="div-60 mobile-collapse">
 			<p>
 				Hi, nice to meet you! I’m Grace (aka grac), a creative in my 20’s based in Brooklyn, NY📍. I’m currently on garden leave (adult gap year) at IMC, where I traded equity options.
 				<br/><br/>
-				For fun, I like playing cards, exploring local coffee shops, reading books, and trying new hobbies (most recently learning Japanese!) (ง•_•)ง 
+				For fun, I like playing cards, exploring local coffee shops, <a href="https://airtable.com/app98GIbatYJA5r1C/shr2ZkWvszoYqVgjj" target="_blank" rel="noopener noreferrer">reading books</a>, and trying new hobbies (most recently learning Japanese!) (ง•_•)ง 
 				<br/><br/>
 				Feel free to say hi! ⇣<br/>
-				github instagram spotify linkedin email
+				<a href="https://github.com/gracejiang" target="_blank" rel="noopener noreferrer">github</a> 
+				<a href="https://open.spotify.com/user/gjiang00?si=c7a4981bc2ab4798" target="_blank" rel="noopener noreferrer">spotify</a> 
+				<a href="https://www.instagram.com/gracjj/" target="_blank" rel="noopener noreferrer">instagram</a>
+				<a href="https://www.linkedin.com/in/gracj/" target="_blank" rel="noopener noreferrer">linkedin</a> 
+				<CopyEmail />
 			</p>
 		</div> 
-		<div class="div-3 mobile-collapse" />
+		<div class="div-3 mobile-collapse">
+			<Spacer verticalSpace={30}/>
+		</div>
 		<div class="div-30 mobile-collapse">
-			<div><em>insert img here</em></div>
+			<div><p><em>insert img here</em></p></div>
 		</div> 
 	</div>
 
@@ -29,4 +40,6 @@ import '../styles/index.css';
 		<h1 class="pageTitle">playground</h1>
 		<a href="/projects/2024">2024</a>
 	</div>
+	<Spacer verticalSpace={80}/>
+</div>
 </PageLayout>

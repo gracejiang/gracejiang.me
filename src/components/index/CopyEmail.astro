@@ -1,0 +1,25 @@
+---
+// CopyEmail.astro
+---
+<a href="#" id="copy-email">email</a>
+<div id="toast" style="display:none; background:#333333; color:white; text-align: center;
+position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+ padding:10px 14px; border-radius:8px; font-size:0.8rem;">
+  Copied to clipboard!
+</div>
+
+<!--position:fixed; bottom:20px; left:50%; transform:translateX(-50%);-->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const emailLink = document.getElementById('copy-email');
+    const toast = document.getElementById('toast');
+
+    emailLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigator.clipboard.writeText('gracjiang@gmail.com');
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 800);
+    });
+  });
+</script>
