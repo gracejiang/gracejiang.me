@@ -9,8 +9,11 @@
 
 html {
   background-color: #F8F8F8;
-  font-family: "Inconsolata", "IBM Plex Mono", monospace, sans-serif;
   color: var(--primary-dark);
+}
+
+body {
+    font-family: "Inconsolata", "IBM Plex Mono", monospace, sans-serif;
 }
 
 * {
@@ -43,4 +46,100 @@ a {
 
 ul {
   padding-left: 24px;
+}
+
+
+
+/* divs & blocks */
+
+.div-3 {
+    display: inline-block;
+    width: 3%;
+    vertical-align: top;
+}
+
+.div-10 {
+    display: inline-block;
+    width: 9%;
+    vertical-align: top;
+}
+
+.div-30 {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+}
+
+.div-33 {
+    display: inline-block;
+    width: 32.5%;
+    vertical-align: top;
+}
+
+.div-45 {
+    display: inline-block;
+    width: 42.5%;
+    vertical-align: top;
+}
+
+.div-47 {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+}
+
+.div-50 {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.div-60 {
+    display: inline-block;
+    width: 59%;
+    vertical-align: top;
+}
+
+
+.div-66 {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+}
+
+.div-70 {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+}
+
+
+
+.outer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.center-align {
+  text-align: center;
+  vertical-align: top;
+}
+
+
+.centered-div {
+    width: calc(var(--global-page-width) - 6ch);
+}
+
+
+
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+  .mobile-collapse {
+    display: block;
+    width: 100%;
+  }
 }

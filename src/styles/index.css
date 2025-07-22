@@ -1,0 +1,13 @@
+body {
+    font-family: "IBM Plex Mono", "Inconsolata",  monospace, sans-serif;
+}
+
+h1 { 
+    font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
