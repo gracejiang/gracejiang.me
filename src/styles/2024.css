@@ -4,8 +4,12 @@
     padding: 0px;
 }
 
-#page-2024 p, ul {
+#page-2024 p, ul, ol {
     line-height: 150%;
+}
+
+#page-2024 li {
+  list-style-position: inside;
 }
 
 #page-2024 .page-section {
@@ -133,7 +137,7 @@
     letter-spacing: 0rem;
 }
 
-/* TUNES */
+/* highlights~ */
 
 #page-2024 .tunes-highlight {
     color: #1A3DBD;
@@ -142,6 +146,25 @@
     letter-spacing: -0.1rem;
 }
 
+
+#page-2024 .books-highlight {
+    color: #5A8392;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+}
+
+
+#page-2024 .tv-highlight {
+    color: #5E5E5E;
+    font-size: 4rem;
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+}
+
+#page-2024 .long-list {
+  font-size: 0.84rem;
+}
 
 /* MOBILE VIEW */
 

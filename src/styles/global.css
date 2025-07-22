@@ -113,6 +113,10 @@ ul {
     vertical-align: top;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 
 
 .outer-div {

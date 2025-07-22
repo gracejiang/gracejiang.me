@@ -1,4 +1,4 @@
 ---
-const { verticalSpace = 0 } = Astro.props;
+const { verticalSpace = 0, horizonalSpace = 0, } = Astro.props;
 ---
-<div style={`height: ${verticalSpace}px;`}></div>
+<div style={`height: ${verticalSpace}px; width: ${horizonalSpace}px;`}></div>

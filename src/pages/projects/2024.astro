@@ -10,6 +10,9 @@ import happi_svg from "../../assets/2024/happi.svg"
 import slep_svg from "../../assets/2024/slep.svg"
 import bellz_svg from "../../assets/2024/bellz.svg"
 import music_svg from "../../assets/2024/music.svg"
+import books_svg from "../../assets/2024/books.svg"
+import tv_svg from "../../assets/2024/tv.svg"
+import cat_svg from "../../assets/2024/cat.svg"
 
 import H_overall from '../../components/2024/H_overall.astro';
 import H_weekday from '../../components/2024/H_weekday.astro';
@@ -104,11 +107,10 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
                 </div>
             </div>
 
-            <!--
 
             <Spacer verticalSpace={20}/>
 
-            <p>my happiness looked mostly normally distributed, centered around <strong>3.07</strong> (σ=0.67), and dipped lower in the middle of the week compared to weekends.</p>
+            <p>my happiness was mostly normally distributed, centered around <strong>3.07</strong> (σ=0.67), and dipped lower in the middle of the week compared to weekends.</p>
             <Spacer verticalSpace={30}/>
 
 
@@ -120,7 +122,6 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
                 <H_weekday />
             </div>
 
-            -->
 
 
         </div>
@@ -274,29 +275,23 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
             <Spacer verticalSpace={12}/>
         </div>
         <div class="page-section-mid">
-
             <h2>just for fun</h2>
-            <Spacer verticalSpace={20}/>
-
+            <Spacer verticalSpace={40}/>
             <div>
                 <h4>tunes ♪₊˚♬ ﾟ</h4>
-
+                <Spacer verticalSpace={10}/>
                 <div>
-                    <div class="div-33 mobile-collapse">
+                    <div class="div-50">
                         <p class="tunes-highlight">17,342</p>
                         <p><em>total tracks listened to</em></p>
                     </div>
-                    <div class="div-33 mobile-collapse">
-                        <p class="tunes-highlight">62,630</p>
-                        <p><em>mins listened (spotify)</em></p>
-                    </div>
-                    <div class="div-33 mobile-collapse">
+                    <div class="div-50">
                         <p class="tunes-highlight">62,630</p>
                         <p><em>mins listened (spotify)</em></p>
                     </div>
                 </div>
 
-                <Spacer verticalSpace={50}/>
+                <Spacer verticalSpace={30}/>
                 <div class="div-47 mobile-collapse">
                     <p><strong>most listened to artists</strong></p>
                     <p>
@@ -331,22 +326,106 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
                     </p>
                 </div>
             </div>
-
-            <!--
             <Spacer verticalSpace={50}/>
-
             <div>
-                <h4></h4>
+                <h4>entertainment</h4>
+                <Spacer verticalSpace={20}/>
+                
+                <div>
+                    <div class="div-47 mobile-collapse">
+                        <div class="inline-block">
+                            <p class="books-highlight"><span>15</span></p>
+                            <p><em>books read</em></p>
+                        </div>
+                        <div class="inline-block">
+                            <Spacer horizontalSpace={8}/>
+                        </div>
+                        <div class="inline-block">
+                            <Image src={books_svg} alt="books icon" style="height: 96px;" />
+                        </div>
+                        <Spacer verticalSpace={20}/>
+                        <p>
+                            <ol class="long-list">
+                                <li>How Do You Live? ★</li>
+                                <li>the perks of being a wallflower ★</li>
+                                <li>Missed Translations ★</li>
+                                <li>Mixed Signals ★</li>
+                                <li>Four Thousand Weeks</li>
+                                <li>What I talk about when I talk about running</li>
+                                <li>Quarterlife</li>
+                                <li>something lost, something gained</li>
+                                <li>Palestine: Peace Not Apartheid</li>
+                                <li>The Power of Regret</li>
+                                <li>The Marshmallow Test</li>
+                                <li>Little Fires Everywhere</li>
+                                <li>To Kill a Mockingbird</li>
+                                <li>Girl Talk</li>
+                                <li>Rich Dad Poor Dad</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="div-3 mobile-collapse">
+                        <Spacer verticalSpace={30}/>
+                    </div>
+                    <div class="div-47 mobile-collapse">
+                        <div class="inline-block">
+                            <p class="tv-highlight"><span>14</span></p>
+                            <p><em>tv shows watched</em></p>
+                        </div>
+                        <div class="inline-block">
+                            <Spacer horizontalSpace={8}/>
+                        </div>
+                        <div class="inline-block">
+                            <Image src={tv_svg} alt="tv icon" style="height: 96px;" />
+                        </div>
+                        <Spacer verticalSpace={20}/>
+                        <p>
+                            <ol class="long-list">
+                                <li>Survivor S47 ★</li>
+                                <li>Survivor S46 ★</li>
+                                <li>Survivor S44</li>
+                                <li>Survivor S43</li>
+                                <li>Survivor S41</li>
+                                <li>Survivor S37 (David vs Goliath)     ★</li>
+                                <li>Singles Inferno S3</li>
+                                <li>Popstar Academy</li>
+                                <li>Business Proposal</li>
+                                <li>Physical 100</li>
+                                <li>Love on the Spectrum S1</li>
+                                <li>Love on the Spectrum S2</li>
+                                <li>Owning Manhattan</li>
+                                <li>Unlocked</li>
+                            </ol>
+                        </p>
+                    </div>
 
-
-
+                    <p><br/><em>★ favorites</em></p>
+                </div>
             </div>
-            -->
 
         </div>
     </div>
 
+    <div class="page-section">
+        <div class="page-section-left">
+            <Image src={cat_svg} alt="cat icon" style="width: 90px;" />
+            <Spacer verticalSpace={12}/>
+        </div>
+        <div class="page-section-mid">
+            <h2>conclusion</h2>
+            <Spacer verticalSpace={30}/>
+            <p>it was pretty fun looking back on the year and seeing stats around different parts of my life!
+            <!-- having data helps inform/validate future decisions,
+            some of the decisions i've made this year, such as leaving my job, 
+            prioritizing affordable rent when apartment hunting, and doing more of my creative work later in the evenings. -->
+            </p>
+        </div>
+    </div>
 
+    <Spacer verticalSpace={30}/>
+    <div class="mobile-hide">
+        <Spacer verticalSpace={30}/>
+    </div>
 
   </div>
 </PageLayout>
