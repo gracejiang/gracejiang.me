@@ -51,15 +51,19 @@ ul {
   padding-left: 24px;
 }
 
-a {
-    color: #47aab5;
-    text-decoration: none;
+.a {
+  color: #5bb071;
+  /* color: #47aab5; */
+  text-decoration: none;
+  border-bottom: 1px dotted #5bb071;
+  padding: 1px;
 }
 
-a:hover {
-    color: #47aab5;
-    background-color: #b0e5eb;
-    transition: background-color 0.16s ease;
+.a:hover {
+  background-color: #ccebd4;
+  /* background-color: #b0e5eb; */
+  transition: background-color 0.16s ease;
+  border-radius: 2px;
 }
 
 
