@@ -26,3 +26,14 @@ p {
 .project-card img:hover {
     transform: scale(1.04);
 }
+
+#home-about-section {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out forwards;
+}
+
+
+#home-playground-section {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.1s forwards;
+}

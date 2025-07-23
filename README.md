@@ -6,7 +6,7 @@
 ## 📝 todo's
 
 - [ ] mobile responsiveness
-- [ ] animations
+- [x] animations
 
 
 ## 🧞 site commands
