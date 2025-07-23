@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import PageLayout from '../layouts/PageLayout.astro';
 import Spacer from '../components/Spacer.astro';
 import CopyEmail from '../components/index/CopyEmail.astro';
 
 import '../styles/index.css';
+
+import grac_pic from "../assets/grac.png"
 ---
 
 <PageLayout title="grac ⋆⭒˚.⋆" includeNavBar={false}>
@@ -17,7 +20,7 @@ import '../styles/index.css';
 			<p>
 				Hi, nice to meet you! I’m Grace (aka grac), a creative in my 20’s based in Brooklyn, NY📍. I’m currently on garden leave (adult gap year) at IMC, where I traded equity options.
 				<br/><br/>
-				For fun, I like playing cards, exploring local coffee shops, <a href="https://airtable.com/app98GIbatYJA5r1C/shr2ZkWvszoYqVgjj" target="_blank" rel="noopener noreferrer">reading books</a>, and trying new hobbies (most recently learning Japanese!) (ง•_•)ง 
+				For fun, I like playing cards, exploring local coffee shops, <a href="https://airtable.com/app98GIbatYJA5r1C/shr2ZkWvszoYqVgjj" target="_blank" rel="noopener noreferrer">reading</a>, and trying new hobbies (most recently learning Japanese!) (ง•_•)ง 
 				<br/><br/><br/>
 				<strong>Feel free to say hi! ⇣</strong><br/>
 				<a href="https://github.com/gracejiang" target="_blank" rel="noopener noreferrer">github</a> 
@@ -28,10 +31,10 @@ import '../styles/index.css';
 			</p>
 		</div> 
 		<div class="div-3 mobile-collapse">
-			<Spacer verticalSpace={30}/>
+			<Spacer verticalSpace={50}/>
 		</div>
-		<div class="div-30 mobile-collapse">
-			<div><p><em>insert img here</em></p></div>
+		<div class="div-30 mobile-collapse" style="text-align: center;">
+			<Image src={grac_pic} alt="pic of me" style="width: 100%; height: auto; max-width: 300px; border-radius: 4px;" />
 		</div> 
 	</div>
 
