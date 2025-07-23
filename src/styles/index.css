@@ -19,12 +19,12 @@ p {
     transition: transform 0.1s ease-out;
 }
 
-.project-card a:hover {
-    background-color: transparent;
-}
-
 .project-card img:hover {
     transform: scale(1.04);
+}
+
+.project-card a {
+    color: var(--primary-dark);
 }
 
 #home-about-section {
@@ -35,4 +35,14 @@ p {
 #home-playground-section {
   opacity: 0;
   animation: floatIn 0.3s ease-out 0.15s forwards;
+}
+
+
+.tag-data  {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 2px 8px 2px 8px;
+    background-color: #79B4C9;
+    border-radius: 4px;
+    color: white;
 }
