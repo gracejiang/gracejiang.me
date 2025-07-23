@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+
+
 body {
     font-family: "Inconsolata", "IBM Plex Mono", monospace, sans-serif;
 }
@@ -29,7 +33,6 @@ body {
   max-width: var(--page-width);
   padding: 16px;
   padding-top: 5rem;
-
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -160,4 +163,28 @@ a:hover {
   .mobile-hide {
     display: none;
   }
+}
+
+
+/* CURSOR */
+
+html {
+    cursor: url("../assets/cursor.svg"), auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"] {
+  cursor: url("../assets/cursor_pointer.svg"), pointer;
+}
+
+/* For active/clicked state */
+a:active,
+button:active,
+[role="button"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  cursor: url("../assets/cursor.svg"), pointer;
 }
