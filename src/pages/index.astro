@@ -6,7 +6,8 @@ import CopyEmail from '../components/index/CopyEmail.astro';
 
 import '../styles/index.css';
 
-import grac_pic from "../assets/grac.png"
+import pic_grac from "../assets/index/grac.png"
+import pic_2024 from "../assets/index/2024.png"
 ---
 
 <PageLayout title="grac ⋆⭒˚.⋆" includeNavBar={false}>
@@ -34,20 +35,26 @@ import grac_pic from "../assets/grac.png"
 			<Spacer verticalSpace={50}/>
 		</div>
 		<div class="div-30 mobile-collapse" style="text-align: center;">
-			<Image src={grac_pic} alt="pic of me" style="width: 100%; height: auto; max-width: 300px; border-radius: 4px;" />
+			<Image src={pic_grac} alt="pic of me" style="width: 100%; height: auto; max-width: 300px; border-radius: 4px;" />
 		</div> 
 	</div>
 
 	<Spacer verticalSpace={80}/>
 	<div>
 		<h1 class="pageTitle">playground</h1>
-		<p>
-			<a href="/projects/2024">2024</a>
-		</p>
+		
+		<div class="div-33 mobile-collapse">
+			<div class="project-card">
+				<a href="/projects/2024">
+					<Image src={pic_2024} alt="2024 in numbers" />
+				</a>
+			</div>
+		</div>
+		
 	</div>
 	<Spacer verticalSpace={80}/>
 	<div class="mobile-hide">
-		<Spacer verticalSpace={40}/>
+		<Spacer verticalSpace={80}/>
 	</div>
 </div>
 </PageLayout>

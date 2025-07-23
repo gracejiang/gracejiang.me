@@ -11,3 +11,18 @@ p {
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+.project-card img {
+    border-radius: 4px;
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.1s ease-out;
+}
+
+.project-card a:hover {
+    background-color: transparent;
+}
+
+.project-card img:hover {
+    transform: scale(1.04);
+}
