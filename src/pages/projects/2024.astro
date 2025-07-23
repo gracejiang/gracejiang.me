@@ -4,6 +4,7 @@ import NavBar from '../../components/NavBar.astro';
 import Spacer from '../../components/Spacer.astro';
 
 import '../../styles/2024.css';
+import '../../styles/animations.css';
 
 import { Image } from 'astro:assets';
 import happi_svg from "../../assets/2024/happi.svg"
@@ -47,7 +48,7 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
     </div>
     
 
-    <div class="page-section">
+    <div class="page-section" id="section-intro">
 
     <div class="outer-div">
         <div class="centered-div">
@@ -404,7 +405,7 @@ import FF_spotify from '../../components/2024/FF_spotify.astro';
         </div>
     </div>
 
-    <div class="page-section">
+    <div class="page-section" id="section-outro">
         <div class="page-section-left">
             <Image src={cat_svg} alt="cat icon" style="width: 90px;" />
             <Spacer verticalSpace={12}/>

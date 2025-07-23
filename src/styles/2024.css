@@ -235,61 +235,35 @@
 .horizontal-scroll-container { 
     overflow-x: auto;
 }
-/* 
-#T_26eef {
-    text-align: center;
-    border-collapse: collapse;
+
+
+/* animations in */
+#section-intro {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out forwards;
 }
 
-#T_26eef td {
-    font-size: 0.8rem;
-    border: 0px;
-    padding: 6px;
+#section-happi {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.1s forwards;
 }
 
-#T_26eef th {
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding: 6px;
+#section-slep {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.2s forwards;
 }
 
-#T_26eef_row0_col0, #T_26eef_row3_col52, #T_26eef_row4_col52, #T_26eef_row5_col52, #T_26eef_row6_col52 {
-  background-color: #b4b4b4;
-  color: #f1f1f1;
+#section-finances {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.3s forwards;
 }
-#T_26eef_row0_col1, #T_26eef_row0_col6, #T_26eef_row0_col8, #T_26eef_row0_col9, #T_26eef_row0_col13, #T_26eef_row0_col14, #T_26eef_row0_col15, #T_26eef_row0_col18, #T_26eef_row0_col24, #T_26eef_row0_col25, #T_26eef_row0_col26, #T_26eef_row0_col30, #T_26eef_row0_col31, #T_26eef_row0_col32, #T_26eef_row0_col33, #T_26eef_row0_col34, #T_26eef_row0_col35, #T_26eef_row0_col38, #T_26eef_row0_col41, #T_26eef_row0_col45, #T_26eef_row0_col46, #T_26eef_row0_col47, #T_26eef_row0_col48, #T_26eef_row0_col49, #T_26eef_row0_col52, #T_26eef_row1_col7, #T_26eef_row1_col19, #T_26eef_row1_col35, #T_26eef_row1_col47, #T_26eef_row2_col0, #T_26eef_row2_col6, #T_26eef_row2_col33, #T_26eef_row2_col41, #T_26eef_row2_col50, #T_26eef_row2_col51, #T_26eef_row2_col52, #T_26eef_row3_col0, #T_26eef_row3_col5, #T_26eef_row3_col6, #T_26eef_row3_col14, #T_26eef_row3_col33, #T_26eef_row3_col41, #T_26eef_row4_col2, #T_26eef_row4_col5, #T_26eef_row4_col16, #T_26eef_row4_col23, #T_26eef_row4_col39, #T_26eef_row4_col45, #T_26eef_row4_col50, #T_26eef_row5_col2, #T_26eef_row5_col6, #T_26eef_row5_col7, #T_26eef_row5_col9, #T_26eef_row5_col10, #T_26eef_row5_col12, #T_26eef_row5_col19, #T_26eef_row5_col22, #T_26eef_row5_col23, #T_26eef_row5_col28, #T_26eef_row5_col32, #T_26eef_row5_col33, #T_26eef_row5_col35, #T_26eef_row5_col37, #T_26eef_row5_col39, #T_26eef_row5_col42, #T_26eef_row5_col44, #T_26eef_row5_col45, #T_26eef_row5_col50, #T_26eef_row5_col51, #T_26eef_row6_col0, #T_26eef_row6_col2, #T_26eef_row6_col5, #T_26eef_row6_col9, #T_26eef_row6_col15, #T_26eef_row6_col22, #T_26eef_row6_col23, #T_26eef_row6_col24, #T_26eef_row6_col25, #T_26eef_row6_col29, #T_26eef_row6_col31, #T_26eef_row6_col32, #T_26eef_row6_col36, #T_26eef_row6_col37, #T_26eef_row6_col42, #T_26eef_row6_col43, #T_26eef_row6_col44, #T_26eef_row6_col46, #T_26eef_row6_col48, #T_26eef_row6_col51 {
-  background-color: #b3d3b3;
-  color: #000000;
+
+#section-fun {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.4s forwards;
 }
-#T_26eef_row0_col2, #T_26eef_row0_col10, #T_26eef_row0_col11, #T_26eef_row0_col12, #T_26eef_row0_col16, #T_26eef_row0_col19, #T_26eef_row0_col20, #T_26eef_row0_col22, #T_26eef_row0_col36, #T_26eef_row0_col39, #T_26eef_row0_col40, #T_26eef_row0_col42, #T_26eef_row0_col51, #T_26eef_row1_col1, #T_26eef_row1_col5, #T_26eef_row1_col6, #T_26eef_row1_col9, #T_26eef_row1_col15, #T_26eef_row1_col16, #T_26eef_row1_col22, #T_26eef_row1_col23, #T_26eef_row1_col24, #T_26eef_row1_col25, #T_26eef_row1_col26, #T_26eef_row1_col27, #T_26eef_row1_col28, #T_26eef_row1_col29, #T_26eef_row1_col30, #T_26eef_row1_col32, #T_26eef_row1_col34, #T_26eef_row1_col40, #T_26eef_row1_col45, #T_26eef_row1_col50, #T_26eef_row2_col1, #T_26eef_row2_col2, #T_26eef_row2_col3, #T_26eef_row2_col5, #T_26eef_row2_col14, #T_26eef_row2_col15, #T_26eef_row2_col19, #T_26eef_row2_col20, #T_26eef_row2_col22, #T_26eef_row2_col23, #T_26eef_row2_col24, #T_26eef_row2_col26, #T_26eef_row2_col27, #T_26eef_row2_col30, #T_26eef_row2_col32, #T_26eef_row2_col35, #T_26eef_row2_col45, #T_26eef_row2_col46, #T_26eef_row3_col1, #T_26eef_row3_col3, #T_26eef_row3_col4, #T_26eef_row3_col9, #T_26eef_row3_col13, #T_26eef_row3_col15, #T_26eef_row3_col16, #T_26eef_row3_col19, #T_26eef_row3_col20, #T_26eef_row3_col22, #T_26eef_row3_col23, #T_26eef_row3_col24, #T_26eef_row3_col25, #T_26eef_row3_col27, #T_26eef_row3_col28, #T_26eef_row3_col35, #T_26eef_row3_col39, #T_26eef_row3_col45, #T_26eef_row3_col46, #T_26eef_row3_col47, #T_26eef_row3_col51, #T_26eef_row4_col1, #T_26eef_row4_col3, #T_26eef_row4_col4, #T_26eef_row4_col8, #T_26eef_row4_col9, #T_26eef_row4_col12, #T_26eef_row4_col22, #T_26eef_row4_col24, #T_26eef_row4_col25, #T_26eef_row4_col29, #T_26eef_row4_col32, #T_26eef_row4_col33, #T_26eef_row4_col34, #T_26eef_row4_col37, #T_26eef_row4_col41, #T_26eef_row4_col43, #T_26eef_row4_col44, #T_26eef_row4_col48, #T_26eef_row5_col3, #T_26eef_row5_col4, #T_26eef_row5_col5, #T_26eef_row5_col8, #T_26eef_row5_col13, #T_26eef_row5_col24, #T_26eef_row5_col29, #T_26eef_row5_col31, #T_26eef_row5_col38, #T_26eef_row5_col41, #T_26eef_row5_col46, #T_26eef_row6_col8, #T_26eef_row6_col12, #T_26eef_row6_col14, #T_26eef_row6_col17, #T_26eef_row6_col18, #T_26eef_row6_col20, #T_26eef_row6_col21, #T_26eef_row6_col28, #T_26eef_row6_col38, #T_26eef_row6_col49 {
-  background-color: #eff0ef;
-  color: #000000;
+
+#section-outro {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.5s forwards;
 }
-#T_26eef_row0_col3, #T_26eef_row0_col4, #T_26eef_row0_col37, #T_26eef_row1_col3, #T_26eef_row1_col4, #T_26eef_row1_col12, #T_26eef_row1_col13, #T_26eef_row1_col41, #T_26eef_row2_col7, #T_26eef_row2_col8, #T_26eef_row2_col9, #T_26eef_row2_col10, #T_26eef_row2_col11, #T_26eef_row2_col12, #T_26eef_row3_col7, #T_26eef_row3_col12, #T_26eef_row3_col17, #T_26eef_row3_col30, #T_26eef_row3_col49, #T_26eef_row4_col7, #T_26eef_row4_col11, #T_26eef_row4_col13, #T_26eef_row4_col15, #T_26eef_row4_col19, #T_26eef_row5_col0, #T_26eef_row5_col30, #T_26eef_row5_col36, #T_26eef_row5_col43, #T_26eef_row5_col48, #T_26eef_row6_col26 {
-  background-color: #f77878;
-  color: #f1f1f1;
-}
-#T_26eef_row0_col5, #T_26eef_row0_col7, #T_26eef_row0_col17, #T_26eef_row0_col23, #T_26eef_row0_col43, #T_26eef_row0_col44, #T_26eef_row0_col50, #T_26eef_row1_col2, #T_26eef_row1_col20, #T_26eef_row1_col33, #T_26eef_row2_col34, #T_26eef_row3_col26, #T_26eef_row3_col32, #T_26eef_row3_col40, #T_26eef_row3_col42, #T_26eef_row4_col14, #T_26eef_row4_col26, #T_26eef_row4_col40, #T_26eef_row4_col42, #T_26eef_row4_col51, #T_26eef_row5_col1, #T_26eef_row5_col16, #T_26eef_row5_col21, #T_26eef_row5_col26, #T_26eef_row5_col34, #T_26eef_row5_col40, #T_26eef_row5_col47, #T_26eef_row5_col49, #T_26eef_row6_col1, #T_26eef_row6_col4, #T_26eef_row6_col6, #T_26eef_row6_col7, #T_26eef_row6_col10, #T_26eef_row6_col13, #T_26eef_row6_col16, #T_26eef_row6_col33, #T_26eef_row6_col34, #T_26eef_row6_col35, #T_26eef_row6_col39, #T_26eef_row6_col40, #T_26eef_row6_col45, #T_26eef_row6_col47 {
-  background-color: #77b777;
-  color: #f1f1f1;
-}
-#T_26eef_row0_col21, #T_26eef_row1_col0, #T_26eef_row1_col21, #T_26eef_row1_col51, #T_26eef_row1_col52, #T_26eef_row2_col21, #T_26eef_row2_col40, #T_26eef_row4_col47, #T_26eef_row5_col20, #T_26eef_row6_col30, #T_26eef_row6_col41 {
-  background-color: #3a9b3a;
-  color: #f1f1f1;
-}
-#T_26eef_row0_col27, #T_26eef_row0_col28, #T_26eef_row0_col29, #T_26eef_row1_col8, #T_26eef_row1_col11, #T_26eef_row1_col14, #T_26eef_row1_col17, #T_26eef_row1_col18, #T_26eef_row1_col36, #T_26eef_row1_col37, #T_26eef_row1_col38, #T_26eef_row1_col39, #T_26eef_row1_col42, #T_26eef_row1_col43, #T_26eef_row1_col44, #T_26eef_row1_col46, #T_26eef_row1_col48, #T_26eef_row1_col49, #T_26eef_row2_col4, #T_26eef_row2_col13, #T_26eef_row2_col16, #T_26eef_row2_col17, #T_26eef_row2_col18, #T_26eef_row2_col25, #T_26eef_row2_col28, #T_26eef_row2_col29, #T_26eef_row2_col36, #T_26eef_row2_col37, #T_26eef_row2_col38, #T_26eef_row2_col39, #T_26eef_row2_col42, #T_26eef_row2_col43, #T_26eef_row2_col47, #T_26eef_row2_col48, #T_26eef_row2_col49, #T_26eef_row3_col2, #T_26eef_row3_col8, #T_26eef_row3_col10, #T_26eef_row3_col11, #T_26eef_row3_col18, #T_26eef_row3_col29, #T_26eef_row3_col31, #T_26eef_row3_col34, #T_26eef_row3_col36, #T_26eef_row3_col37, #T_26eef_row3_col38, #T_26eef_row3_col43, #T_26eef_row3_col48, #T_26eef_row3_col50, #T_26eef_row4_col0, #T_26eef_row4_col6, #T_26eef_row4_col17, #T_26eef_row4_col18, #T_26eef_row4_col21, #T_26eef_row4_col27, #T_26eef_row4_col28, #T_26eef_row4_col31, #T_26eef_row4_col35, #T_26eef_row4_col36, #T_26eef_row4_col38, #T_26eef_row4_col46, #T_26eef_row4_col49, #T_26eef_row5_col11, #T_26eef_row5_col14, #T_26eef_row5_col15, #T_26eef_row5_col17, #T_26eef_row5_col18, #T_26eef_row5_col25, #T_26eef_row5_col27, #T_26eef_row6_col3, #T_26eef_row6_col11, #T_26eef_row6_col27, #T_26eef_row6_col50 {
-  background-color: #f4b5b5;
-  color: #000000;
-}
-#T_26eef_row1_col10, #T_26eef_row1_col31, #T_26eef_row3_col21, #T_26eef_row3_col44, #T_26eef_row4_col10, #T_26eef_row4_col30 {
-  background-color: #fb3c3c;
-  color: #f1f1f1;
-}
-#T_26eef_row2_col31, #T_26eef_row2_col44 {
-  background-color: #ff0000;
-  color: #f1f1f1;
-}
-#T_26eef_row4_col20, #T_26eef_row6_col19 {
-  background-color: #008000;
-  color: #f1f1f1;
-} */
