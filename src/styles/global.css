@@ -210,5 +210,5 @@ button:active,
 [role="button"]:active,
 input[type="button"]:active,
 input[type="submit"]:active {
-  cursor: url("../assets/cursor.svg") 8 8, pointer;
+  cursor: url("../assets/cursor_click.svg") 8 8, pointer;
 }
