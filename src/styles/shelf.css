@@ -1,0 +1,148 @@
+:root {
+  --book-border-radius: 8px;
+}
+
+h2 {
+    font-family: Karla, sans-serif;
+}
+
+#books-airtable {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in, max-height 0.2s ease-in;
+}
+
+#books-airtable.show {
+    opacity: 1;
+    max-height: 400px;
+}
+
+
+/* .book-wrapper:hover {
+    outline: 5px solid #ccebd4;
+    outline-offset: 0px;
+} */
+
+
+
+/* overlays on hover */
+
+.book-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: var(--book-border-radius);
+    margin-bottom: 16px;
+}
+
+.book-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--book-border-radius);
+}
+
+.overlay, .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: var(--book-border-radius);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.overlay-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.book-wrapper:hover .overlay, .book-wrapper:hover .overlay-text, .book-wrapper:hover img {
+  opacity: 1;
+  transform: scale(1.03);
+  transition: transform 0.1s ease-out;
+}
+
+
+/* book tags styling */
+
+.book-tag {
+    border-radius: 24px;
+    text-transform: uppercase;
+    padding: 4px 12px 4px 12px;
+    font-size: 0.7rem;
+    display: block;
+}
+
+.book-tag-nonfiction {
+    background-color: #79B4C9;
+}
+
+.book-tag-self {
+    background-color: #8AC979;
+}
+
+.book-tag-fiction {
+    background-color: #C979C0;
+}
+
+.book-tag-memoir {
+    background-color: #EACB5E;
+}
+
+
+/* animations into page */
+
+#shelf-header-section {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out forwards;
+}
+
+#shelf-favorites-section {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.1s forwards;
+}
+
+#shelf-all-section {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out 0.2s forwards;
+}
+
+
+/* rowlet styling */
+
+#rowlet-wrapper {
+  display: table-cell; 
+  vertical-align: bottom; 
+  text-align: right;
+}
+
+#rowlet-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+}
+/* mobile view */
+
+
+@media (max-width: 768px) {
+  .book-wrapper {
+    width: 28%;
+  }
+
+  #rowlet-wrapper {
+    display: block;
+  }
+}

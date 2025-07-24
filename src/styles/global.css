@@ -75,9 +75,33 @@ ul {
     vertical-align: top;
 }
 
+.div-5 {
+    display: inline-block;
+    width: 5%;
+    vertical-align: top;
+}
+
 .div-10 {
     display: inline-block;
     width: 9%;
+    vertical-align: top;
+}
+
+.div-20 {
+    display: inline-block;
+    width: 19%;
+    vertical-align: top;
+}
+
+.div-22 {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+}
+
+.div-25 {
+    display: inline-block;
+    width: 24%;
     vertical-align: top;
 }
 

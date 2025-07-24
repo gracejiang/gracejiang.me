@@ -1,0 +1,141 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Spacer from '../components/Spacer.astro';
+
+import '../styles/shelf.css';
+import '../styles/animations.css';
+
+import { Image } from 'astro:assets';
+
+import b_born_a_crime from "../assets/shelf/b-born_a_crime.svg"
+import b_evicted from "../assets/shelf/b-evicted.svg"
+import b_how_do_you_live from "../assets/shelf/b-how_do_you_live.svg"
+import b_how_fascism_works from "../assets/shelf/b-how_fascism_works.svg"
+import b_invisible_women from "../assets/shelf/b-invisible_women.svg"
+import b_miseducated from "../assets/shelf/b-miseducated.svg"
+import b_war from "../assets/shelf/b-war.svg"
+import rowlet_svg from "../assets/shelf/rowlet.svg"
+---
+
+<PageLayout title="shelf" includeNavBar={false}>
+  <div id="page-shelf">
+
+    <div class="outer-div">
+        <div class="centered-div">
+            <NavBar/>
+            <Spacer verticalSpace={10}/>
+        </div>
+    </div>
+
+
+    <div>
+
+        <div id="shelf-header-section" style="display: table; width: 100%;">
+            <div style="display: table-cell; vertical-align: bottom;"><h2>shelf ✎‧₊˚</h2></div>
+            <div id="rowlet-wrapper">
+                <Image id="rowlet-img" src={rowlet_svg} alt="rowlet pic"/>
+            </div>
+        </div>
+        <Spacer verticalSpace={40}/>
+
+    
+       <!-- <div id="shelf-header-section" style="display: flex; align-items: flex-end; justify-content: space-between;">
+            <div><h2>shelf ✎‧₊˚</h2></div>
+            <Image id="rowlet-pic" src={rowlet_svg} alt="rowlet pic"/>
+        </div>
+        <Spacer verticalSpace={40}/>-->
+
+        <div id="shelf-favorites-section">
+            <p><strong>favorites</strong></p>
+            <br/>
+            <a href="https://www.goodreads.com/book/show/41104077-invisible-women" target="_blank" rel="noopener noreferrer">
+                <div class="div-22 book-wrapper">
+                    <Image src={b_invisible_women} alt="invisible women book cover" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p>goodreads link ⇢</p>
+                        <Spacer verticalSpace={4}/>
+                        <div class="book-tag book-tag-nonfiction">nonfiction</div>
+                    </div>
+                </div>
+            </a>
+            <div class="inline-block" ><Spacer horizontalSpace={2}/></div>
+            <a href="https://www.goodreads.com/book/show/54110592-how-do-you-live" target="_blank" rel="noopener noreferrer">
+                <div class="div-22 book-wrapper">
+                    <Image src={b_how_do_you_live} alt="how do you live book cover" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p>goodreads link ⇢</p>
+                        <Spacer verticalSpace={4}/>
+                        <div class="book-tag book-tag-fiction">fiction</div>
+                    </div>
+                </div>
+            </a>
+            <div class="inline-block" ><Spacer horizontalSpace={2}/></div>
+            <a href="https://www.goodreads.com/book/show/25852784-evicted" target="_blank" rel="noopener noreferrer">
+                <div class="div-22 book-wrapper">
+                    <Image src={b_evicted} alt="evicted book cover" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p>goodreads link ⇢</p>
+                        <Spacer verticalSpace={4}/>
+                        <div class="book-tag book-tag-nonfiction">nonfiction</div>
+                    </div>
+                </div>
+            </a>
+            <div class="inline-block" ><Spacer horizontalSpace={2}/></div>
+            <a href="https://www.goodreads.com/book/show/38255329-how-fascism-works" target="_blank" rel="noopener noreferrer">
+                <div class="div-22 book-wrapper">
+                    <Image src={b_how_fascism_works} alt="how fascism works book cover" />
+                    <div class="overlay"></div>
+                    <div class="overlay-text">
+                        <p>goodreads link ⇢</p>
+                        <Spacer verticalSpace={4}/>
+                        <div class="book-tag book-tag-nonfiction">nonfiction</div>
+                    </div>
+                </div>
+            </a>
+
+            </div>
+
+        <Spacer verticalSpace={30}/>
+
+        <div id="shelf-all-section">
+            <p><a class="a" id="view-airtable-btn">view all books [+]</a></p>
+            <div id="books-airtable">
+                <Spacer verticalSpace={16}/>
+                <iframe class="airtable-embed" src="https://airtable.com/embed/app98GIbatYJA5r1C/shr2ZkWvszoYqVgjj?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="380px" style="background: transparent; border: 1px solid #ccc; border-radius: 8px;"></iframe>
+                <Spacer verticalSpace={16}/>
+            </div>
+        </div>
+
+        <Spacer verticalSpace={40}/>
+
+        
+
+        <Spacer verticalSpace={80}/>
+        
+
+    </div>
+
+  </div>
+
+
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('view-airtable-btn');
+            const books = document.getElementById('books-airtable');
+
+            btn.addEventListener('click', () => {
+            const isShown = books.classList.contains('show');
+            books.classList.toggle('show');
+            btn.textContent = isShown
+                ? 'view all books [+]'
+                : 'view all books [-]';
+            });
+        });
+    </script>
+
+</PageLayout>
+
