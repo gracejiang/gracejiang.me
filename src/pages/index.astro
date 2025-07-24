@@ -9,6 +9,7 @@ import '../styles/animations.css';
 
 import pic_grac from "../assets/index/grac.png"
 import pic_2024 from "../assets/index/2024.svg"
+import pic_shelf from "../assets/index/shelf.svg"
 ---
 
 <PageLayout title="grac ⋆⭒˚.⋆" includeNavBar={false}>
@@ -22,7 +23,7 @@ import pic_2024 from "../assets/index/2024.svg"
 			<p>
 				Hi, nice to meet you! I’m Grace (aka grac), a creative in my 20’s based in Brooklyn, NY📍. I’m currently on garden leave (adult gap year) at IMC, where I traded equity options.
 				<br/><br/>
-				For fun, I like playing cards, exploring local coffee shops, <a class="a" href="/shelf">reading</a>, and trying new hobbies (most recently learning Japanese!) <span style="font-family: Arial, sans-serif;">(ง •̀_•́)ง</span>
+				For fun, I like playing cards, exploring local coffee shops, and trying new hobbies (most recently learning Japanese!) <span style="font-family: Arial, sans-serif;">(ง •̀_•́)ง</span>
 				<br/><br/><br/>
 				<strong>Feel free to say hi! ⇣</strong><br/>
 				<a class="a" href="https://github.com/gracejiang" target="_blank" rel="noopener noreferrer">github</a> 
@@ -40,19 +41,35 @@ import pic_2024 from "../assets/index/2024.svg"
 		</div> 
 	</div>
 
-	<Spacer verticalSpace={80}/>
+	<Spacer verticalSpace={70}/>
 	<div id="home-playground-section">
 		<h1 class="pageTitle">playground</h1>
 		
 		<div class="div-33 mobile-collapse">
 			<div class="project-card">
 				<a href="/projects/2024">
-				<Image src={pic_2024} alt="2024 in numbers" />
+				<Image src={pic_2024} alt="my 2024 in numbers pic" />
 				<div class="overlay"></div>
 				<div class="overlay-text">
 					<p class="overlay-text-p">my 2024 in numbers ⇢</p>
 					<Spacer verticalSpace={8}/>
 					<p class="tag-project tag-data inline-block">data</p>
+				</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="inline-block"><Spacer horizontalSpace={8}/></div>
+
+		<div class="div-33 mobile-collapse">
+			<div class="project-card">
+				<a href="/shelf">
+				<Image src={pic_shelf} alt="shelf pic" />
+				<div class="overlay"></div>
+				<div class="overlay-text">
+					<p class="overlay-text-p">bookshelf ⇢</p>
+					<Spacer verticalSpace={8}/>
+					<p class="tag-project tag-misc inline-block">misc</p>
 				</div>
 				</a>
 			</div>
