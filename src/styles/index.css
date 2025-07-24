@@ -62,8 +62,7 @@ p {
 }
 
 .project-card:hover {
-  transform: scale(1.03);
-  transition: transform 0.1s ease-out;
+  animation: zoomIn 0.1s ease-out forwards;
 }
 
 .tag-project {

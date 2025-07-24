@@ -168,7 +168,7 @@
 
 /* MOBILE VIEW */
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   #page-2024 .page-section-left {
     display: block;
   }

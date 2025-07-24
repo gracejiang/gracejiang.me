@@ -72,8 +72,10 @@ h2 {
 
 .book-wrapper:hover .overlay, .book-wrapper:hover .overlay-text, .book-wrapper:hover img {
   opacity: 1;
-  transform: scale(1.03);
-  transition: transform 0.1s ease-out;
+}
+
+.book-wrapper:hover {
+  animation: zoomIn 0.1s ease-out forwards;
 }
 
 
@@ -137,8 +139,7 @@ h2 {
 }
 /* mobile view */
 
-
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   .book-wrapper {
     width: 28%;
   }

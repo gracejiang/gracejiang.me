@@ -4,7 +4,6 @@
   --primary-dark: #1F191B;
   --page-width: 80ch;
   --global-page-width: 80ch;
-
 }
 
 html {
@@ -12,9 +11,6 @@ html {
   color: var(--primary-dark);
   scroll-behavior: smooth;
 }
-
-
-
 
 
 body {
@@ -182,7 +178,7 @@ ul {
 
 /* MOBILE VIEW */
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   .mobile-collapse {
     display: block;
     width: 100%;
